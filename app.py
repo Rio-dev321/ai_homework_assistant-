@@ -31,7 +31,7 @@ if st.button("Generate Homework Help"):
 
             with st.spinner("RIO is preparing your lesson..."):
                 response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
+                    model="openai/gpt-oss-120b",
                     messages=[
                         {
                             "role": "system",
